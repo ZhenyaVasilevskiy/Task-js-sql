@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="style.css" rel="stylesheet">
+ <script src="addField.js"></script>
+
+  <title>Document</title>
+</head>
+<body>
+  <form class="myForm" action="#" method="post" onsubmit="alert('submit!');return false">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name"  required/>
+    </div>
+    <div class="phone">
+        <label for="mail">Phone:</label>
+        <input type="phone" id="phone" name="user_phone" required />
+   </div>
+    <div >
+        <label for="msg">Comment:</label>
+        <textarea id="comment" name="user_comment" required></textarea>
+    </div>
+  <button type="button"  class="addBtn first-button">+</button> <!--кнопка,для добавления нового поля -->
+  <button type="submit"  class="sendBth">Send</button>
+  </form>
+
+  <div class="phoneN"> <!--создаваемое поле для телефона  -->
+      <label for="phone">Phone:</label>
+      <input type="phone" id="phoneN" name="user_phone" required/>
+      <button type="button" class="addBtn">+</button>
+  </div>
+</body>
+</html>
